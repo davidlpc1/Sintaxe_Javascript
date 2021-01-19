@@ -9,7 +9,9 @@ class Manager extends Employee {
     }
     
     get netPay(){
-        // netPay + bonuses
+        const finalValue = 
+            Util.unFormatCurrency(super.netPay) + Util.unFormatCurrency(this.bonuses)
+        return Util.formatCurrency(finalValue)
     }
 }
 

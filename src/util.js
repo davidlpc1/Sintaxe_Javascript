@@ -8,7 +8,7 @@ class Util {
         return this.#defaultFormat.format(value)
     }
 
-    static unformatCurrency(value){
+    static unFormatCurrency(value){
         return Number(value.replace(/\D/g,'')) / 100
     }
 }
